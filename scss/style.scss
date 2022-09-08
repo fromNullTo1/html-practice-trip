@@ -30,4 +30,85 @@ body {
 .block {
     height: 200px;
     background-color: aquamarine;
+    border: 1px solid #000;
+}
+
+// header
+
+.header {
+    position: relative;
+
+    min-height: 940px;
+    padding-top: 44px;
+
+    background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 96px;
+    
+        background-image: url('../img/header/header-bottom.svg');
+        background-size: 100%;
+    }
+    &__top {
+        margin-bottom: 86px;
+
+    }
+    &__content {
+        max-width: 592px;  
+    }
+}
+
+// svg preserveAspectRatio="none" & delete height and width for constrain proportions
+//nav
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+  
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 80px;
+        font-size: 15px;
+        font-weight: 500;        
+    }
+    &__link {
+        position: relative;
+    }
+    &__link--active::after,
+    &__link:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 10px;
+        bottom: -6px;
+
+        display: block;
+        height: 4px;
+
+        border-radius: 50px;
+        background-color: #c4c4c4;
+    }
+    &__login {
+    }
+}
+
+//logo
+.logo {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    a {
+        color: inherit;
+    }
 }
