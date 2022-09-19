@@ -269,7 +269,7 @@ body {
   font-size: 55px;
   font-weight: 600; 
 }
-.destinations__title {
+.destinations__title span {
   font-size: 30px; 
 }
 .destinations__text {
