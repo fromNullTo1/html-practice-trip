@@ -16,3 +16,11 @@ $('.slider__btn--next').click(function() {
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel');
 })
+
+const btnToggle = document.querySelector('.btn-toggle');
+const menuIcon = document.querySelector('.menu-icon');
+const headerTop = document.querySelector('.header__top');
+btnToggle.onclick = function(){
+  headerTop.classList.toggle('header__top--mobile')
+  menuIcon.classList.toggle('menu-icon-active');
+}
