@@ -10,16 +10,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-  <header class="header none">
+  <header class="header">
     <div class="container">
       <div class="header__top">
         <div class="logo">
           <h2 class="logo__text">
-            <a class ="logo__link" href="#!">GoTrip</a>
+            <a class="logo__link" href="#!">GoTrip</a>
           </h2>
         </div>
         <nav class="nav">
@@ -40,9 +47,9 @@
             </li>
 
           </ul>
-          
+
         </nav>
-        
+
         <div class="sign">
           <button class="sign__btn sign__btn--trnsprnt">Sign up</button>
           <button class="sign__btn btn">Login</button>
@@ -69,32 +76,152 @@
   <main class="main">
     <section class="destinations">
       <div class="container-right">
-        <div class="block"></div>
-        <div class="destinations__content">
-          <h2 class="destinations__title">
-            <span>Choice Of </span>
-            Destinations
-          </h2>
-          <p class="destinations__text">
-            explore the beauty of god's earth in a beautiful forest and have fun
-          </p>
-          <a class="destinations__btn btn" href="#">Explore Now</a>
-        </div>
-        <div class="destinations__slider">
-          <div class="slider">
-            <img class="slider__item" src="./img/slider/01.jpg " alt="slider item">
-            <img class="slider__item slider__item--active" src="./img/slider/02.jpg " alt="slider item">
-            <img class="slider__item" src="./img/slider/03.jpg " alt="slider item">
+        <div class="destinations__row">
+          <div class="destinations__content">
+            <h2 class="destinations__title">
+              <span>Choice Of </span>
+              Destinations
+            </h2>
+            <p class="destinations__text">
+              explore the beauty of god's earth in a beautiful forest and have fun
+            </p>
+            <a class="destinations__btn btn" href="#">Explore Now</a>
+          </div>
+          <div class="destinations__slider">
+            <div class="slider">
+
+              <div class="owl-carousel">
+                <img class="slider__item" src="./img/slider/01.jpg " alt="slider item">
+                <img class="slider__item slider__item--active" src="./img/slider/02.jpg " alt="slider item">
+                <img class="slider__item" src="./img/slider/03.jpg " alt="slider item">
+              </div>
+              <button class="slider__btn slider__btn--prev">
+                <img src="img/slider/arrow-prev.svg" alt="">
+              </button>
+              <button class="slider__btn slider__btn--next">
+                <img src="img/slider/arrow-next.svg" alt="">
+              </button>
+
+            </div>
           </div>
         </div>
       </div>
     </section>
-    
-    
-    
-    
+    <section class="customers">
+      <div class="container">
+        <div class="customers__row">
+          <div class="customers__img">
+            <img src="./img/customers/customers.jpg" alt="">
+          </div>
+          <div class="customers__content">
+
+            <h2 class="customers__title">What do customers say about us?</h2>
+
+            <div class="review">
+              <div class="review__client">
+                <div class="review__client-avatar">
+                  <img src="./img/customers/user-avatar.png" alt="">
+                </div>
+                <div class="review__client-desc">
+                  <h3 class="review__name">Alpanasap</h3>
+                  <p class="review__from">Japung, Indonesia</p>
+                </div>
+              </div>
+              <div class="review__text">
+                <p>
+                  Very satisfying service makes it comfortable, a beautiful place in the world.
+
+                </p>
+              </div>
+              <div class="review__rate">
+                <img src="./img/customers/stars-rating.svg" alt="">
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <div class="cta__plate">
+          <h2 class="cta__title">          
+          Prepare Yourself And 
+          Start Exploring With Us.
+        </h2>
+        <p class="cta__text">
+          There's the best discount for you today.
+        </p>
+        <a class="cta__btn btn" href="#">
+          Get Started
+        </a>
+        </div>
+        
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+      <div class="subscribe__inner">        
+          <h2 class="subscribe__title">
+            Subscribe <br>
+            To Our Newsletter
+          </h2>
+          <form class="subscribe-form">
+            <input class="subscribe-form__input" type="email" placeholder="Yourmail@mail.com">
+            <button class="subscrive-form__btn btn">Subscribe</button>
+          </form>
+      </div>
+      </div>
+    </section>
+
+
+
+
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo">
+          <h2 class="logo__text logo__text--footer">
+            <a class="logo__link" href="#!">GoTrip</a>
+          </h2>
+        </div>
+        <nav class="nav">
+
+          <ul class="nav__list nav__list">
+
+            <li class="nav__item">
+              <a class="nav__link nav__link--footer" href="#!">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--footer" href="#!">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--footer" href="#!">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--footer" href="#!">Contact</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <div class="sign sign--footer">
+          <button class="sign__btn sign__btn--trnsprnt">Sign up</button>
+          <button class="sign__btn btn">Login</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
 </body>
 
