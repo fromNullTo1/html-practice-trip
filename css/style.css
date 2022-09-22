@@ -734,7 +734,74 @@ footer a {
     right: -15px;
   }
 
+  .customers__title {
+		margin-bottom: 25px;
+		font-size: 35px;
+	}
+  .review__client {
+		column-gap: 30px;
+		margin-bottom: 20px;
+	}
+  .review__client-avatar {
+		width: 80px;
+		height: 80px;
+	}
+  .review__name {
+		margin-bottom: 5px;
+		font-size: 23px;
+	}
+  .review__from {
+		font-size: 18px;
+	}
+  .review__text {
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
 
+	.review__rate {
+		max-width: 200px;
+	}
+  .customers__img img {
+		max-width: 250px;
+		border-radius: 40px;
+	}
+  .cta {
+		padding: 50px 0;
+	}
+
+	.cta__title {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+  
+	.cta__text {
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+
+	.cta__plate {
+		min-height: 380px;
+		padding: 20px 15px;
+		border-radius: 40px;
+	}
+  .subscribe {
+		padding: 25px 0 30px;
+	}
+
+	.subscribe__title {
+		margin-bottom: 30px;
+		font-size: 35px;
+	}
+
+	.subscribe-form {
+		padding: 10px 10px 10px 20px;
+		border-radius: 25px;
+		column-gap: 10px;
+	}
+
+	.subscribe-form__input {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 700px) {
